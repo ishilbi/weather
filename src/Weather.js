@@ -15,7 +15,7 @@ export default function Weather() {
     <div className="weather-app">
       <div className="overview">
         <div className="weather-title">
-          Weather <img src="image/weather.svg" alt="" width="90px" />
+          Weather <img src="image/weather.svg" alt="headerImage" width="90px" />
         </div>
         <form>
           <div className="row">
@@ -24,7 +24,7 @@ export default function Weather() {
                 type="search"
                 placeholder="Enter a city..."
                 class="form-control search-input"
-                autocomplete="off"
+                autoComplete="off"
               />
             </div>
             <div class="col-3 p-0">
