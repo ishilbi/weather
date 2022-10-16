@@ -6,11 +6,9 @@
   padding: 30px;
   box-shadow: 0px 30px 50px #f9f7fd;
   background: white;
-}
-body {
   font-family: "Courier New", Courier, monospace;
 }
-.btn {
+.App .btn {
   background: #272142;
   font-weight: 700;
   font-size: 16px;
@@ -18,7 +16,7 @@ body {
   border: none;
   height: 50px;
 }
-.search-input {
+.App .search-input {
   background: #f9f7fe;
   border: none;
   padding: 15px 20px;
@@ -29,7 +27,7 @@ body {
   height: 50px;
   line-height: 20px;
 }
-.weather-title {
+.App .weather-title {
   line-height: 29px;
   font-weight: Normal;
   font-size: 40px;

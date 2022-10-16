@@ -20,18 +20,18 @@ export default function Weather() {
         </div>
         <form>
           <div className="row">
-            <div class="col-9">
+            <div className="col-9">
               <input
                 type="search"
                 placeholder="Enter a city..."
-                class="form-control search-input"
+                className="form-control search-input"
                 autoComplete="off"
               />
             </div>
-            <div class="col-3 p-0">
+            <div className="col-3 p-0">
               <input
                 type="submit"
-                class="btn btn-primary w-100"
+                className="btn btn-primary w-100"
                 value="Search"
               />
             </div>
@@ -39,9 +39,9 @@ export default function Weather() {
         </form>
       </div>
 
-      <div class="weather-info">
-        <div class="row">
-          <div class="col-6">
+      <div className="weather-info">
+        <div className="row">
+          <div className="col-6">
             <h1>{weatherData.city}</h1>
             <h2>{weatherData.date}</h2>
             <ul>
@@ -50,24 +50,24 @@ export default function Weather() {
               <li>Wind Speed: {weatherData.wind}km/hr</li>
             </ul>
           </div>
-          <div class="col-6">
-            <div class="clearfix weather-temperature">
-              <div class="float-right">
-                <span class="temperature">{weatherData.temperature}</span>
-                <span class="units">
+          <div className="col-6">
+            <div className="clearfix weather-temperature">
+              <div className="float-right">
+                <span className="temperature">{weatherData.temperature}</span>
+                <span className="units">
                   <a href="/">°C</a> | <a href="/">°F</a>
                 </span>
               </div>
               <img
                 src={weatherData.imgUrl}
                 alt={weatherData.description}
-                class="float-right"
+                className="float-right"
               />
             </div>
           </div>
         </div>
       </div>
-      <div class="weather-forecast"></div>
+      <div className="weather-forecast"></div>
     </div>
   );
 }
