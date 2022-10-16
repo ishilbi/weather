@@ -10,7 +10,7 @@ export default function Footer() {
       </a>{" "}
       and is{" "}
       <a
-        href="https://github.com/ishilbi/portfolio-project"
+        href="https://github.com/ishilbi/weather"
         target="_blank"
         rel="noreferrer"
         class="footer-link"
