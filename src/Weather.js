@@ -14,9 +14,7 @@ export default function Weather() {
   return (
     <div className="weather-app">
       <div className="overview">
-        <div className="weather-title">
-          Weather <img src="image/weather.svg" alt="headerImage" width="90px" />
-        </div>
+        <div className="weather-title">Weather</div>
         <form>
           <div className="row">
             <div class="col-9">
