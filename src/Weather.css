@@ -93,7 +93,7 @@ li:first-letter {
   bottom: -10px;
   text-decoration: none;
   color: #272142;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .weather-temperature .active {
   color: #272142;
