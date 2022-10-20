@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
@@ -50,41 +50,9 @@ export default function Weather(props) {
                 </div>
               </div>
             </form>
+            <WeatherInfo data={weatherData} />
           </div>
 
-          <div className="weather-info">
-            <div className="row">
-              <div className="col-6">
-                <h1>{weatherData.city}</h1>
-                <h2>
-                  <FormattedDate date={weatherData.date} />
-                </h2>
-                <ul>
-                  <li className="text-capitalize">{weatherData.description}</li>
-                  <li>Temp min: {Math.round(weatherData.tempMin)}°C</li>
-                  <li>Temp max: {Math.round(weatherData.tempMax)}°C</li>
-                  <li>Humidity: {weatherData.humidity}%</li>
-                  <li>Wind: {weatherData.wind} km/hr</li>
-                </ul>
-              </div>
-              <div className="col-6">
-                <div className="clearfix weather-temperature">
-                  <div className="float-right">
-                    <span className="temperature">
-                      {Math.round(weatherData.temperature)}
-                    </span>
-                    <span className="units">
-                      <a href="/">°C</a> | <a href="/">°F</a>
-                    </span>
-                  </div>
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                    alt="sunnycloudy"
-                  ></img>{" "}
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="weather-forecast"></div>
         </div>
       </div>
