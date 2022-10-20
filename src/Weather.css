@@ -1,6 +1,6 @@
 .Weather {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 .weather .overview {
   margin: 10px 0;
@@ -8,11 +8,16 @@
 .overview {
   margin-bottom: 30px;
 }
-
+.Weather h3 {
+  font-size: 47px;
+}
+.Weather img {
+  margin-left: 40px;
+}
 .Weather h1 {
   margin: 20px 0 10px 0;
   line-height: 29px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 38px;
   line-height: 48px;
 
@@ -77,6 +82,10 @@ li:first-letter {
 .weather-temperature img {
   margin-left: 50px;
   margin-top: -30px;
+}
+.Weather canvas {
+  margin-top: -30px;
+  margin-left: 60px;
 }
 .temperature {
   font-size: 60px;

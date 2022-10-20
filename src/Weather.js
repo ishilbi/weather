@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import image from "./weather.svg";
 import axios from "axios";
 import "./Weather.css";
 
@@ -10,7 +11,6 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-
       temperature: response.data.main.temp,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
@@ -19,6 +19,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       tempMax: response.data.main.temp_max,
       tempMin: response.data.main.temp_min,
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -42,8 +43,14 @@ export default function Weather(props) {
         <div className="weather-app">
           <div className="overview">
             <div className="weather-title">
-              Weather
-              <img src="{image/weather.svg}" alt=""></img>
+              <h3> Weather</h3>
+
+              <img
+                src={image}
+                alt=""
+                width="80px"
+                className="float-right sunnyPicture "
+              ></img>
             </div>
             <form onSubmit={handleSubmit}>
               <div className="row">
