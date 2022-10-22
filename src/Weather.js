@@ -43,14 +43,16 @@ export default function Weather(props) {
         <div className="weather-app">
           <div className="overview">
             <div className="weather-title">
-              <h3> Weather</h3>
-
-              <img
-                src={image}
-                alt=""
-                width="80px"
-                className="float-right sunnyPicture "
-              ></img>
+              <h3>
+                {" "}
+                Weather{" "}
+                <img
+                  src={image}
+                  alt=""
+                  width="90px"
+                  className="float-right sunnyPicture"
+                ></img>
+              </h3>
             </div>
             <form onSubmit={handleSubmit}>
               <div className="row">
