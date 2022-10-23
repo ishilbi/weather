@@ -9,7 +9,11 @@
   margin-bottom: 30px;
 }
 .Weather h3 {
-  font-size: 47px;
+  line-height: 29px;
+  font-weight: Normal;
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 20px;
 }
 .Weather img {
   margin-left: 40px;
@@ -18,17 +22,22 @@
 .Weather h1 {
   margin: 20px 0 10px 0;
   line-height: 29px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 38px;
   line-height: 48px;
 
   color: #272142;
 }
 .Weather h2 {
-  font-size: 20px;
+  font-size: 23px;
+  line-height: 30px;
   font-weight: 500;
   color: #272142;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+}
+.Weather .weather-description {
+  font-size: 20px;
+  margin-bottom: 7px;
 }
 .Weather ul {
   margin: 0;
@@ -80,8 +89,7 @@ li:first-letter {
 .weather-temperature {
   margin-top: 30px;
 }
-
-.Weather canvas {
+.Weather .WeatherInfo-canvas {
   margin-top: -30px;
   margin-left: 70px;
 }

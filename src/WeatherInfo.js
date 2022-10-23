@@ -14,7 +14,9 @@ export default function WeatherInfo(props) {
               <FormattedDate date={props.data.date} />
             </h2>
             <ul>
-              <li className="text-capitalize">{props.data.description}</li>
+              <li className="text-capitalize weather-description">
+                {props.data.description}
+              </li>
               <li>Temp min: {Math.round(props.data.tempMin)}°C</li>
               <li>Temp max: {Math.round(props.data.tempMax)}°C</li>
               <li>Humidity: {props.data.humidity}%</li>
@@ -28,9 +30,9 @@ export default function WeatherInfo(props) {
                   <WeatherTemperature celsius={props.data.temperature} />
                 </span>
 
-                <div className="float-right">
+                <div className="float-right WeatherInfo-canvas">
                   {" "}
-                  <WeatherIcon code={props.data.icon} />
+                  <WeatherIcon code={props.data.icon} size={52} />
                 </div>
               </div>
             </div>
