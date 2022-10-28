@@ -99,13 +99,13 @@ li:first-letter {
   font-weight: 700;
   position: relative;
   line-height: 1;
-  bottom: -30px;
+  bottom: -35px;
   margin-left: 150px;
 }
 .Weather .unit {
   letter-spacing: -2px;
   position: relative;
-  bottom: -5px;
+  bottom: -10px;
   text-decoration: none;
   color: #272142;
   font-size: 17px;
