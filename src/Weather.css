@@ -17,7 +17,7 @@
 }
 .Weather img {
   margin-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .Weather h1 {
   margin: 20px 0 10px 0;
@@ -99,17 +99,18 @@ li:first-letter {
   font-weight: 700;
   position: relative;
   line-height: 1;
-  bottom: -35px;
+  bottom: -30px;
   margin-left: 150px;
 }
 .Weather .unit {
   letter-spacing: -2px;
   position: relative;
-  bottom: -10px;
+  bottom: -5px;
   text-decoration: none;
   color: #272142;
   font-size: 17px;
   margin-left: -5px;
+  font-weight: bold;
 }
 .weather-temperature .active {
   color: #272142;

@@ -4,9 +4,9 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="Footer">
-      <p class="text-center mt-5">
+      <p className="text-center mt-5">
         This project was coded by{" "}
-        <a href="mailto:silvialeelee7@gmail.com" class="footer-link">
+        <a href="mailto:silvialeelee7@gmail.com" className="footer-link">
           Silvia Lee
         </a>{" "}
         and is{" "}
@@ -14,7 +14,7 @@ export default function Footer() {
           href="https://github.com/ishilbi/weather"
           target="_blank"
           rel="noreferrer"
-          class="footer-link"
+          className="footer-link"
         >
           open-sourced on GitHub
         </a>{" "}
@@ -23,7 +23,7 @@ export default function Footer() {
           href="https://www.netlify.com/"
           target="_blank"
           rel="noreferrer"
-          class="footer-link"
+          className="footer-link"
         >
           Netlify
         </a>
